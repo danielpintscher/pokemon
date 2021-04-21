@@ -1,0 +1,50 @@
+.pagination {
+    list-style: none;
+    padding: 0;
+    margin: 2em 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+.pagination li a {
+    display: block;
+    border-radius: 3px;
+    padding: .8em 1.5em;
+    color: #1b53ba;
+    cursor: pointer;
+    background-color: #FFF;
+    margin: 0 .5em;
+}
+
+.pagination li.previous a,
+.pagination li.next a {
+    color: #FFF;
+    background-color: #1b53ba;
+}
+
+.pagination li.disabled a {
+    cursor: inherit;
+    color: #FFF;
+    background-color: #7caaff;
+}
+
+.pagination li.active a {
+    cursor: inherit;
+    background-color: #1b53ba;
+    color: #ededed;
+}
+
+.pagination li a:hover {
+    background-color: #1b53ba;
+    color: #ededed;
+}
+
+.pagination li.disabled a:hover {
+    cursor: inherit;
+    color: #999;
+    background-color: inherit;
+}
+
